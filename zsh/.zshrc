@@ -36,11 +36,8 @@ PATH=$PATH:/home/$(whoami)/.config/bin
 # PROMPT #
 ##########
 
-#COLOR_A='#F57200'
-#COLOR_B='#a46100'
-
-#COLOR_A='#ff0088'
-#COLOR_B='#8f0056'
+VIOLET='#7547ff'
+PURPLE='#ff87ff'
 
 setopt PROMPT_SUBST
 
@@ -58,13 +55,16 @@ command_status() {
 
 usr_color() {
 	if [[ $(id -u) -eq 0 ]]; then
-		echo "%{%F{red}%}"
+		echo "%{%K{red}%}"
 	else
-		echo "%{%F{magenta}%}"
+		echo "%{%K{black}%}"
 	fi
 }
 
+# PROMPT='%F{${VIOLET}}◖%F{black}%K{${VIOLET}}%B%F{black}<$(command_status)%F{black}><%~>%F{${VIOLET}}%K{black} %b%F{blue}'
 PROMPT='%B%F{magenta}<$(command_status)%F{magenta}><%~>%F{blue} '
+
+# to clear color after the prompt
 preexec() {
 	echo -en "\e[0m"
 }
