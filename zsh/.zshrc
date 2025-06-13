@@ -13,7 +13,8 @@ compinit
 alias ls='exa -A -F -alF --icons --color=always --group-directories-first'
 alias l=ls
 alias c=clear
-alias n=nvim
+alias v=nvim
+alias vim=nvim
 alias rd=radare2
 alias e=exit
 alias gs='git status'
