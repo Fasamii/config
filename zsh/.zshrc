@@ -12,6 +12,10 @@ compinit
 # alias ls='ls -lAh --color'
 alias ls='exa -A -F -alF --icons --color=always --group-directories-first'
 alias l=ls
+alias mk=mkdir
+alias rmd='rm -d'
+alias rmr='rm -r'
+alias rmfr='rm -rf'
 alias c=clear
 alias v=nvim
 alias vim=nvim
