@@ -6,6 +6,8 @@ unsetopt beep
 bindkey -v
 zstyle :compinstall filename '/home/fasamii/.config/zsh/.zshrc'
 
+[ -f "/home/wasabi/.ghcup/env" ] && . "/home/wasabi/.ghcup/env" # ghcup-env
+
 autoload -Uz compinit
 compinit
 
@@ -20,6 +22,7 @@ alias c=clear
 alias h=hyprland
 alias v=nvim
 alias vim=nvim
+alias :q=exit
 alias rd=radare2
 alias e=exit
 alias q=exit
