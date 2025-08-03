@@ -11,6 +11,7 @@ settings:
     https://claude.ai: access-paste
     https://github.com: access-paste
     https://github.dev: access-paste
+    https://rustup.rs: access-paste
     https://www.mermaidchart.com: access-paste
     https://www.perplexity.ai: access-paste
     https://www.phind.com: access-paste
