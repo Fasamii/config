@@ -34,6 +34,12 @@ alias gps='git push'
 alias fman='compgen -c | fzf | xargs man'
 alias a='ip -c a'
 alias snote='hyprctl notify -1 999999999 "rgb(ffffff)" '
+udate() {
+    while true; do
+        printf '\r%s' "$(command date)"
+        sleep 1
+    done
+}
 cd() {
 	if [[ $@ == "..." ]]; then
 		builtin cd ../..;
