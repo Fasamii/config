@@ -11,6 +11,8 @@ zstyle :compinstall filename '/home/fasamii/.config/zsh/.zshrc'
 autoload -Uz compinit
 compinit
 
+export MANPAGER='nvim +Man!'
+
 # alias ls='ls -lAh --color'
 alias ls='exa -A -F -alF --icons --color=always --group-directories-first'
 alias l=ls
