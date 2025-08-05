@@ -152,9 +152,9 @@ c.colors.downloads.system.bg = "rgb"
 c.colors.downloads.system.fg = "rgb"
 
 # TODO: check what that even is
-c.colors.hints.bg = 'qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 247, 133, 0.8), stop:1 rgba(255, 197, 66, 0.8))'
+c.colors.hints.bg = "#000000"
 c.colors.hints.fg = "#ffffff"
-c.colors.hints.match.fg = 'green'
+c.colors.hints.match.fg = "#000000"
 
 c.colors.keyhint.bg = 'rgba(0, 0, 0, 80%)'
 c.colors.keyhint.fg = '#FFFFFF'
