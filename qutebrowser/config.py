@@ -110,7 +110,6 @@ c.url.searchengines = {
     "gi": "https://github.com/search?q={}",
     "yt": "https://www.youtube.com/results?search_query={}",
     "wi": "https://en.wikipedia.org/wiki/{}",
-    "per": "https://www.perplexity.ai/search?q={}",
     "phi": "https://www.phind.com/search?q={}"
 }
 
@@ -133,12 +132,12 @@ c.colors.completion.item.selected.match.fg = "#b3e6e6"
 c.colors.completion.scrollbar.bg = "#000000"
 c.colors.completion.scrollbar.fg = "#ffffff"
 
-c.colors.contextmenu.disabled.bg = "#ff0000"
-c.colors.contextmenu.disabled.fg = "#0000ff"
-c.colors.contextmenu.menu.bg = "#0000ff"
-c.colors.contextmenu.menu.fg = "#ff0000"
-c.colors.contextmenu.selected.bg = "#0000ff"
-c.colors.contextmenu.selected.fg = "#ff0000"
+c.colors.contextmenu.disabled.bg = "#000000"
+c.colors.contextmenu.disabled.fg = "#666666"
+c.colors.contextmenu.menu.bg = "#000000"
+c.colors.contextmenu.menu.fg = "#ffffff"
+c.colors.contextmenu.selected.bg = "#ffffff"
+c.colors.contextmenu.selected.fg = "#000000"
 
 c.colors.downloads.bar.bg = "#000000"
 c.colors.downloads.error.bg = "#ff0000"
@@ -146,7 +145,7 @@ c.colors.downloads.error.fg = "#ffffff"
 c.colors.downloads.start.bg = '#0000aa'
 c.colors.downloads.start.fg = "#ffffff"
 # TODO: check if it is what you think it is
-c.colors.downloads.stop.bg = "#aaaaaa"
+c.colors.downloads.stop.bg = "#FFFFFF"
 c.colors.downloads.stop.fg = "#000000"
 c.colors.downloads.system.bg = "rgb"
 c.colors.downloads.system.fg = "rgb"
