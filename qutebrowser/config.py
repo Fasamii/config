@@ -142,11 +142,11 @@ c.colors.contextmenu.selected.fg = "#000000"
 c.colors.downloads.bar.bg = "#000000"
 c.colors.downloads.error.bg = "#ff0000"
 c.colors.downloads.error.fg = "#ffffff"
-c.colors.downloads.start.bg = '#0000aa'
+c.colors.downloads.start.bg = '#0000AA'
 c.colors.downloads.start.fg = "#ffffff"
 # TODO: check if it is what you think it is
-c.colors.downloads.stop.bg = "#FFFFFF"
-c.colors.downloads.stop.fg = "#000000"
+c.colors.downloads.stop.bg = "#00AA00"
+c.colors.downloads.stop.fg = "#FFFFFF"
 c.colors.downloads.system.bg = "rgb"
 c.colors.downloads.system.fg = "rgb"
 
