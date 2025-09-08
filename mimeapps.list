@@ -1,3 +1,4 @@
 
 [Default Applications]
 x-scheme-handler/discord-218837120066781184=discord-218837120066781184.desktop
+x-scheme-handler/nxm=com.nexusmods.app.desktop
