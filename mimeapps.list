@@ -2,3 +2,8 @@
 [Default Applications]
 x-scheme-handler/discord-218837120066781184=discord-218837120066781184.desktop
 x-scheme-handler/nxm=com.nexusmods.app.desktop
+text/html=qutebrowser.desktop
+x-scheme-handler/http=qutebrowser.desktop
+x-scheme-handler/https=qutebrowser.desktop
+x-scheme-handler/about=qutebrowser.desktop
+x-scheme-handler/unknown=qutebrowser.desktop

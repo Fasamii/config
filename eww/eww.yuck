@@ -1,0 +1,75 @@
+;; Variables
+(defvar show_bar true)
+
+;; Polls for system data
+(defpoll time_hour :interval "1s" "date +%H")
+(defpoll time_minute :interval "1s" "date +%M") 
+(defpoll time_second :interval "1s" "date +%S")
+(defpoll song_title :interval "2s" "playerctl metadata title 2>/dev/null | fold -w1 | head -20")
+(defpoll song_position :interval "1s" "playerctl position 2>/dev/null | cut -d. -f1 | xargs printf '%03d' || echo '000'")
+(defpoll song_length :interval "2s" "playerctl metadata mpris:length 2>/dev/null | awk '{printf \"%03d\", int($1/1000000)}' || echo '000'")
+
+;; Time widget
+(defwidget time []
+  (box :class "time-container"
+       :orientation "v"
+       :space-evenly false
+       :spacing 2
+       :style "margin-bottom: 4px;"
+    (label :text time_hour 
+           :style "color: #ffffff; font-size: 9px; text-align: center; padding: 2px 0; min-height: 12px;")
+    (label :text time_minute 
+           :style "color: #ffffff; font-size: 9px; text-align: center; padding: 2px 0; min-height: 12px;")
+    (label :text time_second 
+           :style "color: #ffffff; font-size: 9px; text-align: center; padding: 2px 0; min-height: 12px;")))
+
+;; Song info widget  
+(defwidget song []
+  (box :class "song-container"
+       :orientation "v" 
+       :space-evenly false
+       :spacing 4
+    (label :text {song_title != "" ? song_title : "No Song"}
+           :limit-width 20
+           :wrap false)
+    (box :class "song-timing"
+	   :orientation "v"
+	   :space-evenly false
+	   :spacing 2
+	   :style "padding-top: 8px"
+    ;; (label :text song_position) 
+    ;; (label :text song_length)
+	(circular-progress 
+	  :style "color: #ffffff; background-color: #666666;"
+	  :value "${song_length > 0 ? (song_position * 100 / song_length) : 0}"
+	  :thickness 8)
+)))
+
+;; Main bar widget
+(defwidget bar []
+  (box :class "main-bar"
+       :orientation "v"
+       :space-evenly false
+       :style "background-color: #000000; color: #ffffff; padding: 6px 0px; font-size: 12px; font-weight: 400; font-family: 'FiraCode', monospace;"
+    (time)
+    (box :expand true :vexpand true)
+    (box :orientation "v"
+         :visible {song_title != ""}
+         (song))
+	))
+
+;; Window definition
+(defwindow bar
+  :monitor 0
+  :geometry (geometry :x "0px"
+                      :y "0px" 
+                      :width "24px"
+                      :height "100%"
+                      :anchor "right center")
+  :stacking "fg"
+  :reserve (struts :distance "40px" :side "right")
+  :windowtype "dock"
+  :wm-ignore false
+  :exclusive true
+  :layer "top"
+  (bar))

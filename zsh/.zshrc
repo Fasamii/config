@@ -35,6 +35,7 @@ alias gcm='git commit -m'
 alias gps='git push'
 alias fman='compgen -c | fzf | xargs man'
 alias a='ip -c a'
+alias co=cargo
 alias snote='hyprctl notify -1 999999999 "rgb(ffffff)" '
 udate() {
     while true; do
