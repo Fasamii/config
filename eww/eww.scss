@@ -1,8 +1,8 @@
 .main-bar {
   color: #fff;
-  background-color: #000;
+  background-color: #022;
   padding: 6px 0px;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 500;
   font-family: 'FiraCode', monospace;
 }
@@ -10,6 +10,8 @@
 .vol-bar>trough {
   border-radius: 0;
   border: none;
+  padding: 0;
+  margin: 0;
 
   background-color: #383838;
 }
@@ -17,6 +19,8 @@
 .vol-bar>trough>progress {
   border-radius: 0;
   border: none;
+  padding: 0;
+  margin: 0;
 
   background-color: #fff;
 }
