@@ -11,7 +11,7 @@
 	"playerctl -p spotify,vlc,firefox,%any metadata title 2>/dev/null | tr '[:lower:]' '[:upper:]' | fold -w1 | head -28 || echo ''"
 )
 
-(defpoll song_position :interval "500ms" 
+(defpoll song_position :interval "1s" 
 	"playerctl -p spotify,vlc,firefox,%any position 2>/dev/null | cut -d. -f1 | xargs printf '%03d' || echo '000'"
 )
 

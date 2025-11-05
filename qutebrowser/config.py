@@ -93,6 +93,7 @@ c.aliases = {
 # Tabs
 config.bind("J", "tab-next")
 config.bind("K", "tab-prev")
+config.bind("td", "tab-clone")
 config.bind("t1", "tab-focus 1")
 config.bind("t2", "tab-focus 2")
 config.bind("t3", "tab-focus 3")
@@ -121,7 +122,7 @@ c.colors.completion.category.border.top = "#808"
 c.colors.completion.category.border.bottom = "#f0f"
 c.colors.completion.category.fg = "#ffffff"
 c.colors.completion.even.bg = "#000000"
-c.colors.completion.odd.bg = '#101010'
+c.colors.completion.odd.bg = "#101010"
 c.colors.completion.fg = ["#d600c8", "#ffffff", "#ffaf00"]
 c.colors.completion.match.fg = "#b3e6e6"
 c.colors.completion.item.selected.bg = "#875fff"
@@ -155,51 +156,32 @@ c.colors.hints.bg = "#000000"
 c.colors.hints.fg = "#ffffff"
 c.colors.hints.match.fg = "#000000"
 
-c.colors.keyhint.bg = 'rgba(0, 0, 0, 80%)'
-c.colors.keyhint.fg = '#FFFFFF'
-
-# Highlight color for keys to complete the current keychain.
-# Type: QssColor
-# c.colors.keyhint.suffix.fg = '#FFFF00'
+c.colors.keyhint.bg = "#00000088"
+c.colors.keyhint.fg = "#FFFFFF"
+c.colors.keyhint.suffix.fg = "#FF0000"
 
 # Background color of an error message.
-# Type: QssColor
 # c.colors.messages.error.bg = 'red'
-
 # Border color of an error message.
-# Type: QssColor
 # c.colors.messages.error.border = '#bb0000'
-
 # Foreground color of an error message.
-# Type: QssColor
 # c.colors.messages.error.fg = 'white'
 
 # Background color of an info message.
-# Type: QssColor
 # c.colors.messages.info.bg = 'black'
-
 # Border color of an info message.
-# Type: QssColor
 # c.colors.messages.info.border = '#333333'
-
 # Foreground color of an info message.
-# Type: QssColor
 # c.colors.messages.info.fg = 'white'
 
 # Background color of a warning message.
-# Type: QssColor
 # c.colors.messages.warning.bg = 'darkorange'
-
 # Border color of a warning message.
-# Type: QssColor
 # c.colors.messages.warning.border = '#d47300'
-
 # Foreground color of a warning message.
-# Type: QssColor
 # c.colors.messages.warning.fg = 'black'
 
 # Background color for prompts.
-# Type: QssColor
 # c.colors.prompts.bg = '#444444'
 
 # Border used around UI elements in prompts.
@@ -313,41 +295,31 @@ c.colors.keyhint.fg = '#FFFFFF'
 # c.colors.statusbar.url.warn.fg = 'yellow'
 
 c.colors.tabs.bar.bg = "#000000"
+
 c.colors.tabs.even.bg = "#000000"
 c.colors.tabs.even.fg = "#ffffff"
 c.colors.tabs.odd.bg = "#111111"
 c.colors.tabs.odd.fg = "#ffffff"
 
-c.colors.tabs.indicator.error = '#ff0000'
-c.colors.tabs.indicator.start = '#0000aa'
-c.colors.tabs.indicator.stop = '#00aa00'
-c.colors.tabs.indicator.system = 'rgb'
+c.colors.tabs.indicator.error = "#ff0000"
+c.colors.tabs.indicator.start = "#0000aa"
+c.colors.tabs.indicator.stop = "#00aa00"
+c.colors.tabs.indicator.system = "rgb"
+
+c.colors.tabs.pinned.even.bg = "#2A2A2A"
+c.colors.tabs.pinned.even.fg = "#FFFFFF"
+c.colors.tabs.pinned.odd.bg = "#2E2E2E"
+c.colors.tabs.pinned.odd.fg = "#FFFFFF"
 
 c.colors.tabs.pinned.selected.even.bg = "#ffffff"
 c.colors.tabs.pinned.selected.even.fg = "#000000"
 c.colors.tabs.pinned.selected.odd.bg = "#ffffff"
 c.colors.tabs.pinned.selected.odd.fg = "#000000"
 
-c.colors.tabs.selected.even.bg = "#aaaaaa"
+c.colors.tabs.selected.even.bg = "#afafaf"
 c.colors.tabs.selected.even.fg = "#000000"
-c.colors.tabs.selected.odd.bg = "#aaaaaa"
+c.colors.tabs.selected.odd.bg = "#afafaf"
 c.colors.tabs.selected.odd.fg = "#000000"
-
-# Background color of pinned unselected even tabs.
-# Type: QtColor
-# c.colors.tabs.pinned.even.bg = 'darkseagreen'
-
-# Foreground color of pinned unselected even tabs.
-# Type: QtColor
-# c.colors.tabs.pinned.even.fg = 'white'
-
-# Background color of pinned unselected odd tabs.
-# Type: QtColor
-# c.colors.tabs.pinned.odd.bg = 'seagreen'
-
-# Foreground color of pinned unselected odd tabs.
-# Type: QtColor
-# c.colors.tabs.pinned.odd.fg = 'white'
 
 
 # Background color of tooltips. If set to null, the Qt default is used.
