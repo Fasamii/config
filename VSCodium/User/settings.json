@@ -1,0 +1,8 @@
+{
+    "workbench.startupEditor": "none",
+    "workbench.iconTheme": "mc-dp-icons",
+    "workbench.colorTheme": "Moegi Black",
+    "editor.fontSize": 12,
+    "workbench.editor.highlightModifiedTabs": true,
+    "editor.fontFamily": "'Monocraft', 'Droid Sans Mono', 'monospace', monospace"
+}

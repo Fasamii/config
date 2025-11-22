@@ -1,0 +1,166 @@
+22:12:08.965: Platform: Wayland
+22:12:08.965: CPU Name: Intel(R) Core(TM) i5-7300HQ CPU @ 2.50GHz
+22:12:08.965: CPU Speed: 3121.593MHz
+22:12:08.966: Physical Cores: 4, Logical Cores: 4
+22:12:08.966: Physical Memory: 7826MB Total, 2940MB Free
+22:12:08.966: Kernel Version: Linux 6.17.6-arch1-1
+22:12:08.966: Distribution: "Arch Linux" Unknown
+22:12:08.966: Desktop Environment: Hyprland (Hyprland)
+22:12:08.966: Session Type: wayland
+22:12:08.967: Current Date/Time: 2025-11-22, 22:12:08
+22:12:08.967: Browser Hardware Acceleration: true
+22:12:08.967: Qt Version: 6.10.1 (runtime), 6.9.2 (compiled)
+22:12:08.967: Portable mode: false
+22:12:09.007: OBS 32.0.1 (linux)
+22:12:09.007: ---------------------------------
+22:12:09.008: ---------------------------------
+22:12:09.008: audio settings reset:
+22:12:09.008: 	samples per sec: 48000
+22:12:09.008: 	speakers:        2
+22:12:09.008: 	max buffering:   960 milliseconds
+22:12:09.008: 	buffering type:  dynamically increasing
+22:12:09.009: ---------------------------------
+22:12:09.009: Initializing OpenGL...
+22:12:09.009: Using EGL/Wayland
+22:12:09.061: Initialized EGL 1.5
+22:12:09.079: Loading up OpenGL on adapter Intel Mesa Intel(R) HD Graphics 630 (KBL GT2)
+22:12:09.079: OpenGL loaded successfully, version 4.6 (Core Profile) Mesa 25.3.0-arch1.2, shading language 4.60
+22:12:09.112: ---------------------------------
+22:12:09.112: video settings reset:
+22:12:09.112: 	base resolution:   1680x1050
+22:12:09.112: 	output resolution: 1152x720
+22:12:09.112: 	downscale filter:  Bicubic
+22:12:09.112: 	fps:               30/1
+22:12:09.112: 	format:            NV12
+22:12:09.112: 	YUV mode:          Rec. 709/Partial
+22:12:09.112: NV12 texture support enabled
+22:12:09.112: P010 texture support not available
+22:12:09.120: Audio monitoring device:
+22:12:09.120: 	name: Default
+22:12:09.120: 	id: default
+22:12:09.121: ---------------------------------
+22:12:09.123: Failed to load 'en-US' text for module: 'decklink-captions.so'
+22:12:09.124: Failed to load 'en-US' text for module: 'decklink-output-ui.so'
+22:12:09.125: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+22:12:09.125: Failed to initialize module 'decklink.so'
+22:12:09.243: [pipewire] Available capture sources:
+22:12:09.243: [pipewire]     - Monitor source
+22:12:09.243: [pipewire]     - Window source
+22:12:09.249: v4l2loopback not installed, virtual camera not registered
+22:12:09.266: VAAPI: Failed to initialize display in vaapi_device_h264_supported
+22:12:11.001: VAAPI: API version 1.22
+22:12:11.003: FFmpeg VAAPI H264 encoding supported
+22:12:11.005: VAAPI: Failed to initialize display in vaapi_device_av1_supported
+22:12:11.011: FFmpeg VAAPI AV1 encoding not supported
+22:12:11.011: VAAPI: Failed to initialize display in vaapi_device_hevc_supported
+22:12:11.017: FFmpeg VAAPI HEVC encoding supported
+22:12:11.021: os_dlopen(libnvidia-encode.so.1->libnvidia-encode.so.1): libnvidia-encode.so.1: cannot open shared object file: No such file or directory
+22:12:11.021: 
+22:12:11.021: NVENC not supported
+22:12:11.021: Failed to initialize module 'obs-nvenc.so'
+22:12:11.053: [obs-websocket] [obs_module_load] you can haz websockets (Version: 5.6.3 | RPC Version: 1)
+22:12:11.053: [obs-websocket] [obs_module_load] Qt version (compile-time): 6.9.2 | Qt version (run-time): 6.10.1
+22:12:11.053: [obs-websocket] [obs_module_load] Linked ASIO Version: 103600
+22:12:11.058: [obs-websocket] [obs_module_load] Module loaded.
+22:12:11.063: ---------------------------------
+22:12:11.063:   Loaded Modules:
+22:12:11.063:     text-freetype2.so
+22:12:11.063:     rtmp-services.so
+22:12:11.063:     obs-x264.so
+22:12:11.063:     obs-websocket.so
+22:12:11.063:     obs-webrtc.so
+22:12:11.063:     obs-vst.so
+22:12:11.063:     obs-transitions.so
+22:12:11.063:     obs-qsv11.so
+22:12:11.063:     obs-outputs.so
+22:12:11.063:     obs-libfdk.so
+22:12:11.063:     obs-filters.so
+22:12:11.063:     obs-ffmpeg.so
+22:12:11.063:     linux-v4l2.so
+22:12:11.063:     linux-pulseaudio.so
+22:12:11.063:     linux-pipewire.so
+22:12:11.063:     linux-jack.so
+22:12:11.063:     linux-capture.so
+22:12:11.063:     linux-alsa.so
+22:12:11.063:     image-source.so
+22:12:11.063:     frontend-tools.so
+22:12:11.063:     decklink-output-ui.so
+22:12:11.063:     decklink-captions.so
+22:12:11.063: ---------------------------------
+22:12:11.063: ---------------------------------
+22:12:11.063: Available Encoders:
+22:12:11.063:   Video Encoders:
+22:12:11.063: 	- ffmpeg_svt_av1 (SVT-AV1)
+22:12:11.063: 	- ffmpeg_aom_av1 (AOM AV1)
+22:12:11.063: 	- ffmpeg_vaapi_tex (FFmpeg VAAPI H.264)
+22:12:11.063: 	- hevc_ffmpeg_vaapi_tex (FFmpeg VAAPI HEVC)
+22:12:11.063: 	- obs_x264 (x264)
+22:12:11.063:   Audio Encoders:
+22:12:11.063: 	- ffmpeg_aac (FFmpeg AAC)
+22:12:11.063: 	- ffmpeg_opus (FFmpeg Opus)
+22:12:11.063: 	- ffmpeg_pcm_s16le (FFmpeg PCM (16-bit))
+22:12:11.063: 	- ffmpeg_pcm_s24le (FFmpeg PCM (24-bit))
+22:12:11.063: 	- ffmpeg_pcm_f32le (FFmpeg PCM (32-bit float))
+22:12:11.063: 	- ffmpeg_alac (FFmpeg ALAC (24-bit))
+22:12:11.063: 	- ffmpeg_flac (FFmpeg FLAC (16-bit))
+22:12:11.063: 	- libfdk_aac (libfdk AAC)
+22:12:11.063: ==== Startup complete ===============================================
+22:12:11.100: Failed to register with host portal QDBusError("org.freedesktop.portal.Error.Failed", "Could not register app ID: Connection already associated with an application ID")
+22:12:11.100: All scene data cleared
+22:12:11.100: ------------------------------------------------
+22:12:11.104: pulse-input: Server name: 'PulseAudio (on PipeWire 1.4.9) 15.0.0'
+22:12:11.104: pulse-input: Audio format: s32le, 48000 Hz, 2 channels
+22:12:11.104: pulse-input: Started recording from 'alsa_output.pci-0000_00_1f.3.analog-stereo.monitor' (default)
+22:12:11.104: [Loaded global audio device]: 'Desktop Audio'
+22:12:11.105: pulse-input: Server name: 'PulseAudio (on PipeWire 1.4.9) 15.0.0'
+22:12:11.105: pulse-input: Audio format: s32le, 48000 Hz, 2 channels
+22:12:11.105: pulse-input: Started recording from 'alsa_input.pci-0000_00_1f.3.analog-stereo' (default)
+22:12:11.105: [Loaded global audio device]: 'Mic/Aux'
+22:12:11.106: Switched to scene 'Scene'
+22:12:11.106: ------------------------------------------------
+22:12:11.106: Loaded scenes:
+22:12:11.106: - scene 'Scene':
+22:12:11.106: ------------------------------------------------
+22:12:11.120: Device for 'Audio Output Capture' source is also used for audio monitoring:
+22:12:11.120: Deduplication logic is being applied to all monitored sources.
+22:12:11.120: 
+22:12:11.675: adding 21 milliseconds of audio buffering, total audio buffering is now 21 milliseconds (source: Desktop Audio)
+22:12:11.675: 
+22:12:11.717: adding 21 milliseconds of audio buffering, total audio buffering is now 42 milliseconds (source: Mic/Aux)
+22:12:11.717: 
+22:12:18.407: virtual void QtWaylandClient::QWaylandTextInputv3::disableSurface(wl_surface*) Try to disable surface 0x55e91f9920a0 with focusing surface 0x55e9217ccb30
+22:12:20.058: User added scene 'Scene 2'
+22:12:20.063: User switched to scene 'Scene 2'
+22:12:34.980: virtual void QtWaylandClient::QWaylandTextInputv3::disableSurface(wl_surface*) Try to disable surface 0x55e91f9920a0 with focusing surface 0x55e92183c400
+22:12:36.990: obs-data.c: [obs_data_create_from_json] Failed reading json string (1): '[' or '{' expected near end of file
+22:12:37.005: User added source 'Video Capture Device (PipeWire) (BETA)' (pipewire-camera-source) to scene 'Scene 2'
+22:12:37.020: [camera-portal] Selected format for ''
+22:12:37.020: [camera-portal] selected camera ''
+22:12:37.052: [camera-portal] Successfully accessed cameras
+22:12:37.078: [pipewire] Server version: 1.4.9
+22:12:37.078: [pipewire] Library version: 1.4.9
+22:12:37.078: [pipewire] Header version: 1.4.8
+22:12:37.078: [pipewire] Created registry 0x55e9217afea0
+22:12:37.078: [camera-portal] Found device v4l2_input.pci-0000_00_14.0-usb-0_6_1.0
+22:12:37.079: [camera-portal] Selected format for ''
+22:12:37.079: [camera-portal] selected camera ''
+22:12:38.860: [camera-portal] selected camera 'v4l2_input.pci-0000_00_14.0-usb-0_6_1.0'
+22:12:38.860: [camera-portal] Updating pixel formats
+22:12:38.860: [camera-portal] Selected format for 'v4l2_input.pci-0000_00_14.0-usb-0_6_1.0'
+22:12:38.860: obs-data.c: [obs_data_create_from_json] Failed reading json string (1): '[' or '{' expected near end of file
+22:12:38.872: [camera-portal] Selected format for 'v4l2_input.pci-0000_00_14.0-usb-0_6_1.0'
+22:12:38.873: [camera-portal] streaming camera 'v4l2_input.pci-0000_00_14.0-usb-0_6_1.0'
+22:12:38.873: [pipewire] Created stream 0x55e920d261a0
+22:12:38.873: [pipewire] Stream 0x55e920d261a0 state: "connecting" (error: none)
+22:12:38.878: [pipewire] Playing stream 0x55e920d261a0
+22:12:38.879: [pipewire] Stream 0x55e920d261a0 state: "paused" (error: none)
+22:12:38.883: [pipewire] Renegotiating stream
+22:12:38.886: [camera-portal] Updating device v4l2_input.pci-0000_00_14.0-usb-0_6_1.0
+22:12:39.039: [pipewire] Negotiated format:
+22:12:39.039: [pipewire]     Format: 4 (Spa:Enum:VideoFormat:YUY2)
+22:12:39.039: [pipewire]     Size: 1280x720
+22:12:39.039: [pipewire]     Framerate: 10/1
+22:12:39.042: [pipewire] Stream 0x55e920d261a0 state: "streaming" (error: none)
+22:12:42.220: [camera-portal] Updating device 
+22:12:42.220: [pipewire] Stream 0x55e920d261a0 state: "paused" (error: none)
+22:12:42.221: [pipewire] Stream 0x55e920d261a0 state: "unconnected" (error: none)

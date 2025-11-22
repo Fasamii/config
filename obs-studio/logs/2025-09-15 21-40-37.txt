@@ -1,0 +1,443 @@
+21:40:37.437: Platform: Wayland
+21:40:37.437: CPU Name: Intel(R) Core(TM) i5-7300HQ CPU @ 2.50GHz
+21:40:37.437: CPU Speed: 3166.320MHz
+21:40:37.437: Physical Cores: 4, Logical Cores: 4
+21:40:37.437: Physical Memory: 7827MB Total, 2867MB Free
+21:40:37.437: Kernel Version: Linux 6.16.7-arch1-1
+21:40:37.437: Distribution: "Arch Linux" Unknown
+21:40:37.437: Desktop Environment: Hyprland (Hyprland)
+21:40:37.437: Session Type: wayland
+21:40:37.439: Current Date/Time: 2025-09-15, 21:40:37
+21:40:37.439: Browser Hardware Acceleration: true
+21:40:37.439: Qt Version: 6.9.2 (runtime), 6.9.1 (compiled)
+21:40:37.439: Portable mode: false
+21:40:37.479: OBS 31.1.2 (linux)
+21:40:37.479: ---------------------------------
+21:40:37.480: ---------------------------------
+21:40:37.480: audio settings reset:
+21:40:37.480: 	samples per sec: 48000
+21:40:37.480: 	speakers:        2
+21:40:37.480: 	max buffering:   960 milliseconds
+21:40:37.480: 	buffering type:  dynamically increasing
+21:40:37.482: ---------------------------------
+21:40:37.482: Initializing OpenGL...
+21:40:37.482: Using EGL/Wayland
+21:40:39.230: Initialized EGL 1.5
+21:40:39.248: Loading up OpenGL on adapter Intel Mesa Intel(R) HD Graphics 630 (KBL GT2)
+21:40:39.248: OpenGL loaded successfully, version 4.6 (Core Profile) Mesa 25.2.2-arch1.2, shading language 4.60
+21:40:39.285: ---------------------------------
+21:40:39.285: video settings reset:
+21:40:39.285: 	base resolution:   1920x1080
+21:40:39.285: 	output resolution: 1280x720
+21:40:39.285: 	downscale filter:  Bicubic
+21:40:39.285: 	fps:               30/1
+21:40:39.285: 	format:            NV12
+21:40:39.285: 	YUV mode:          Rec. 709/Partial
+21:40:39.285: NV12 texture support enabled
+21:40:39.285: P010 texture support not available
+21:40:39.293: Audio monitoring device:
+21:40:39.293: 	name: Default
+21:40:39.293: 	id: default
+21:40:39.295: ---------------------------------
+21:40:39.302: Failed to load 'en-US' text for module: 'decklink-captions.so'
+21:40:39.309: Failed to load 'en-US' text for module: 'decklink-output-ui.so'
+21:40:39.315: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+21:40:39.315: Failed to initialize module 'decklink.so'
+21:40:39.476: [pipewire] No capture sources available
+21:40:39.495: v4l2loopback not installed, virtual camera not registered
+21:40:39.560: VAAPI: Failed to initialize display in vaapi_device_h264_supported
+21:40:39.567: VAAPI: API version 1.22
+21:40:39.569: FFmpeg VAAPI H264 encoding supported
+21:40:39.569: VAAPI: Failed to initialize display in vaapi_device_av1_supported
+21:40:39.575: FFmpeg VAAPI AV1 encoding not supported
+21:40:39.575: VAAPI: Failed to initialize display in vaapi_device_hevc_supported
+21:40:39.581: FFmpeg VAAPI HEVC encoding supported
+21:40:39.606: os_dlopen(libnvidia-encode.so.1->libnvidia-encode.so.1): libnvidia-encode.so.1: cannot open shared object file: No such file or directory
+21:40:39.606: 
+21:40:39.606: NVENC not supported
+21:40:39.606: Failed to initialize module 'obs-nvenc.so'
+21:40:39.691: os_dlopen(/usr/lib/obs-plugins/obs-websocket.so->/usr/lib/obs-plugins/obs-websocket.so): libqrcodegencpp.so.1: cannot open shared object file: No such file or directory
+21:40:39.691: 
+21:40:39.691: Module '/usr/lib/obs-plugins/obs-websocket.so' not loaded
+21:40:39.716: ---------------------------------
+21:40:39.716:   Loaded Modules:
+21:40:39.716:     text-freetype2.so
+21:40:39.716:     rtmp-services.so
+21:40:39.716:     obs-x264.so
+21:40:39.716:     obs-webrtc.so
+21:40:39.716:     obs-vst.so
+21:40:39.716:     obs-transitions.so
+21:40:39.716:     obs-qsv11.so
+21:40:39.716:     obs-outputs.so
+21:40:39.716:     obs-libfdk.so
+21:40:39.716:     obs-filters.so
+21:40:39.716:     obs-ffmpeg.so
+21:40:39.716:     linux-v4l2.so
+21:40:39.716:     linux-pulseaudio.so
+21:40:39.716:     linux-pipewire.so
+21:40:39.716:     linux-jack.so
+21:40:39.716:     linux-capture.so
+21:40:39.716:     linux-alsa.so
+21:40:39.716:     image-source.so
+21:40:39.716:     frontend-tools.so
+21:40:39.716:     decklink-output-ui.so
+21:40:39.716:     decklink-captions.so
+21:40:39.716: ---------------------------------
+21:40:39.716: ---------------------------------
+21:40:39.716: Available Encoders:
+21:40:39.716:   Video Encoders:
+21:40:39.716: 	- ffmpeg_svt_av1 (SVT-AV1)
+21:40:39.716: 	- ffmpeg_aom_av1 (AOM AV1)
+21:40:39.716: 	- ffmpeg_vaapi_tex (FFmpeg VAAPI H.264)
+21:40:39.716: 	- hevc_ffmpeg_vaapi_tex (FFmpeg VAAPI HEVC)
+21:40:39.716: 	- obs_x264 (x264)
+21:40:39.716:   Audio Encoders:
+21:40:39.716: 	- ffmpeg_aac (FFmpeg AAC)
+21:40:39.716: 	- ffmpeg_opus (FFmpeg Opus)
+21:40:39.716: 	- ffmpeg_pcm_s16le (FFmpeg PCM (16-bit))
+21:40:39.716: 	- ffmpeg_pcm_s24le (FFmpeg PCM (24-bit))
+21:40:39.716: 	- ffmpeg_pcm_f32le (FFmpeg PCM (32-bit float))
+21:40:39.716: 	- ffmpeg_alac (FFmpeg ALAC (24-bit))
+21:40:39.716: 	- ffmpeg_flac (FFmpeg FLAC (16-bit))
+21:40:39.716: 	- libfdk_aac (libfdk AAC)
+21:40:39.716: ==== Startup complete ===============================================
+21:40:39.721: No scene file found, creating default scene
+21:40:39.765: All scene data cleared
+21:40:39.765: ------------------------------------------------
+21:40:39.775: pulse-input: Server name: 'PulseAudio (on PipeWire 1.4.8) 15.0.0'
+21:40:39.776: pulse-input: Audio format: s32le, 48000 Hz, 2 channels
+21:40:39.776: pulse-input: Started recording from 'alsa_output.pci-0000_00_1f.3.analog-stereo.monitor' (default)
+21:40:39.776: pulse-input: Server name: 'PulseAudio (on PipeWire 1.4.8) 15.0.0'
+21:40:39.776: pulse-input: Audio format: s32le, 48000 Hz, 2 channels
+21:40:39.776: pulse-input: Started recording from 'alsa_input.pci-0000_00_1f.3.analog-stereo' (default)
+21:40:39.778: Switched to scene 'Scene'
+21:40:39.778: Created scene collection 'Untitled' (clean, Untitled.json)
+21:40:39.778: ------------------------------------------------
+21:40:40.267: [rtmp-services plugin] Successfully updated file 'services.json' (version 275)
+21:40:40.267: [rtmp-services plugin] Successfully updated package (version 275)
+21:40:40.339: adding 21 milliseconds of audio buffering, total audio buffering is now 21 milliseconds (source: Desktop Audio)
+21:40:40.339: 
+21:40:57.121: 
+21:40:57.121: ==== Auto-config wizard testing commencing ======
+
+21:40:57.127: ---------------------------------
+21:40:57.127: video settings reset:
+21:40:57.127: 	base resolution:   1920x1080
+21:40:57.127: 	output resolution: 1152x720
+21:40:57.127: 	downscale filter:  Bicubic
+21:40:57.127: 	fps:               60/1
+21:40:57.127: 	format:            NV12
+21:40:57.127: 	YUV mode:          Rec. 709/Partial
+21:40:57.127: NV12 texture support enabled
+21:40:57.127: P010 texture support not available
+21:40:57.148: Output 'null': Tried to use obs_output_set_media on an encoded output
+21:40:57.148: ---------------------------------
+21:40:57.148: [x264 encoder: 'test_x264'] preset: veryfast
+21:40:57.148: [x264 encoder: 'test_x264'] profile: high
+21:40:57.149: [x264 encoder: 'test_x264'] settings:
+21:40:57.149: 	rate_control: CRF
+21:40:57.149: 	bitrate:      0
+21:40:57.149: 	buffer size:  0
+21:40:57.149: 	crf:          20
+21:40:57.149: 	fps_num:      60
+21:40:57.149: 	fps_den:      1
+21:40:57.149: 	width:        1152
+21:40:57.149: 	height:       720
+21:40:57.149: 	keyint:       250
+21:40:57.149: 
+21:40:57.158: ---------------------------------
+21:40:57.158: [FFmpeg aac encoder: 'test_aac'] bitrate: 32, channels: 2, channel_layout: stereo, track: 1
+21:40:57.158: 
+21:41:02.161: Output 'null': stopping
+21:41:02.161: Output 'null': Total frames output: 267
+21:41:02.161: Output 'null': Total drawn frames: 300
+21:41:02.302: Video stopped, number of skipped frames due to encoding lag: 122/300 (40.7%)
+21:41:02.366: ---------------------------------
+21:41:02.366: video settings reset:
+21:41:02.366: 	base resolution:   1920x1080
+21:41:02.366: 	output resolution: 1152x720
+21:41:02.366: 	downscale filter:  Bicubic
+21:41:02.366: 	fps:               30/1
+21:41:02.366: 	format:            NV12
+21:41:02.366: 	YUV mode:          Rec. 709/Partial
+21:41:02.366: NV12 texture support enabled
+21:41:02.366: P010 texture support not available
+21:41:02.375: Output 'null': Tried to use obs_output_set_media on an encoded output
+21:41:02.375: ---------------------------------
+21:41:02.375: [x264 encoder: 'test_x264'] preset: veryfast
+21:41:02.375: [x264 encoder: 'test_x264'] profile: high
+21:41:02.375: [x264 encoder: 'test_x264'] settings:
+21:41:02.375: 	rate_control: CRF
+21:41:02.375: 	bitrate:      0
+21:41:02.375: 	buffer size:  0
+21:41:02.375: 	crf:          20
+21:41:02.375: 	fps_num:      30
+21:41:02.375: 	fps_den:      1
+21:41:02.375: 	width:        1152
+21:41:02.375: 	height:       720
+21:41:02.375: 	keyint:       250
+21:41:02.375: 
+21:41:02.379: ---------------------------------
+21:41:02.380: [FFmpeg aac encoder: 'test_aac'] bitrate: 32, channels: 2, channel_layout: stereo, track: 1
+21:41:02.380: 
+21:41:07.382: Output 'null': stopping
+21:41:07.382: Output 'null': Total frames output: 129
+21:41:07.382: Output 'null': Total drawn frames: 150
+21:41:07.442: ---------------------------------
+21:41:07.442: video settings reset:
+21:41:07.442: 	base resolution:   1920x1080
+21:41:07.442: 	output resolution: 768x480
+21:41:07.442: 	downscale filter:  Bicubic
+21:41:07.442: 	fps:               60/1
+21:41:07.442: 	format:            NV12
+21:41:07.442: 	YUV mode:          Rec. 709/Partial
+21:41:07.442: NV12 texture support enabled
+21:41:07.442: P010 texture support not available
+21:41:07.446: Output 'null': Tried to use obs_output_set_media on an encoded output
+21:41:07.446: ---------------------------------
+21:41:07.446: [x264 encoder: 'test_x264'] preset: veryfast
+21:41:07.446: [x264 encoder: 'test_x264'] profile: high
+21:41:07.446: [x264 encoder: 'test_x264'] settings:
+21:41:07.446: 	rate_control: CRF
+21:41:07.446: 	bitrate:      0
+21:41:07.446: 	buffer size:  0
+21:41:07.446: 	crf:          20
+21:41:07.446: 	fps_num:      60
+21:41:07.446: 	fps_den:      1
+21:41:07.446: 	width:        768
+21:41:07.446: 	height:       480
+21:41:07.446: 	keyint:       250
+21:41:07.446: 
+21:41:07.453: ---------------------------------
+21:41:07.453: [FFmpeg aac encoder: 'test_aac'] bitrate: 32, channels: 2, channel_layout: stereo, track: 1
+21:41:07.453: 
+21:41:12.454: Output 'null': stopping
+21:41:12.458: Output 'null': Total frames output: 279
+21:41:12.458: Output 'null': Total drawn frames: 300
+21:41:12.480: ---------------------------------
+21:41:12.480: video settings reset:
+21:41:12.480: 	base resolution:   1920x1080
+21:41:12.480: 	output resolution: 768x480
+21:41:12.480: 	downscale filter:  Bicubic
+21:41:12.480: 	fps:               30/1
+21:41:12.480: 	format:            NV12
+21:41:12.480: 	YUV mode:          Rec. 709/Partial
+21:41:12.480: NV12 texture support enabled
+21:41:12.480: P010 texture support not available
+21:41:12.487: Output 'null': Tried to use obs_output_set_media on an encoded output
+21:41:12.487: ---------------------------------
+21:41:12.487: [x264 encoder: 'test_x264'] preset: veryfast
+21:41:12.487: [x264 encoder: 'test_x264'] profile: high
+21:41:12.487: [x264 encoder: 'test_x264'] settings:
+21:41:12.487: 	rate_control: CRF
+21:41:12.487: 	bitrate:      0
+21:41:12.487: 	buffer size:  0
+21:41:12.487: 	crf:          20
+21:41:12.487: 	fps_num:      30
+21:41:12.487: 	fps_den:      1
+21:41:12.487: 	width:        768
+21:41:12.487: 	height:       480
+21:41:12.487: 	keyint:       250
+21:41:12.487: 
+21:41:12.492: ---------------------------------
+21:41:12.492: [FFmpeg aac encoder: 'test_aac'] bitrate: 32, channels: 2, channel_layout: stereo, track: 1
+21:41:12.492: 
+21:41:17.493: Output 'null': stopping
+21:41:17.496: Output 'null': Total frames output: 129
+21:41:17.496: Output 'null': Total drawn frames: 150
+21:41:17.520: ---------------------------------
+21:41:17.520: video settings reset:
+21:41:17.520: 	base resolution:   1920x1080
+21:41:17.520: 	output resolution: 1280x720
+21:41:17.520: 	downscale filter:  Bicubic
+21:41:17.520: 	fps:               30/1
+21:41:17.520: 	format:            NV12
+21:41:17.520: 	YUV mode:          Rec. 709/Partial
+21:41:17.521: NV12 texture support enabled
+21:41:17.521: P010 texture support not available
+21:42:32.663: ---------------------------------
+21:42:32.663: video settings reset:
+21:42:32.663: 	base resolution:   1680x1050
+21:42:32.663: 	output resolution: 1152x720
+21:42:32.663: 	downscale filter:  Bicubic
+21:42:32.663: 	fps:               30/1
+21:42:32.663: 	format:            NV12
+21:42:32.663: 	YUV mode:          Rec. 709/Partial
+21:42:32.663: NV12 texture support enabled
+21:42:32.663: P010 texture support not available
+21:42:32.684: 
+21:42:32.684: ==== Auto-config wizard testing stopping ========
+
+21:42:57.060: Settings changed (appearance)
+21:42:57.060: ------------------------------------------------
+21:43:16.322: ==== Shutting down ==================================================
+21:43:16.334: pulse-input: Stopped recording from 'alsa_output.pci-0000_00_1f.3.analog-stereo.monitor'
+21:43:16.334: pulse-input: Got 6261 packets with 7513200 frames
+21:43:16.334: pulse-input: Stopped recording from 'alsa_input.pci-0000_00_1f.3.analog-stereo'
+21:43:16.334: pulse-input: Got 6261 packets with 7513200 frames
+21:43:16.398: All scene data cleared
+21:43:16.399: ------------------------------------------------
+21:43:16.534: [Scripting] Total detached callbacks: 0
+21:43:16.535: Freeing OBS context data
+21:43:16.555: == Profiler Results =============================
+21:43:16.555: run_program_init: 2437.68 ms
+21:43:16.555:  ┣OBSApp::AppInit: 20.643 ms
+21:43:16.555:  ┃ ┗OBSApp::InitLocale: 1.88 ms
+21:43:16.555:  ┗OBSApp::OBSInit: 2376.58 ms
+21:43:16.555:    ┣obs_startup: 2.4 ms
+21:43:16.555:    ┗OBSBasic::OBSInit: 2333.83 ms
+21:43:16.555:      ┣OBSBasic::InitBasicConfig: 0.58 ms
+21:43:16.555:      ┣OBSBasic::ResetAudio: 0.244 ms
+21:43:16.555:      ┣OBSBasic::ResetVideo: 1812.66 ms
+21:43:16.555:      ┃ ┗obs_init_graphics: 1804.51 ms
+21:43:16.555:      ┃   ┗shader compilation: 35.873 ms
+21:43:16.555:      ┣OBSBasic::InitOBSCallbacks: 0.005 ms
+21:43:16.555:      ┣OBSBasic::InitHotkeys: 0.029 ms
+21:43:16.555:      ┣obs_load_all_modules2: 421.643 ms
+21:43:16.555:      ┃ ┣obs_init_module(decklink-captions.so): 0 ms
+21:43:16.555:      ┃ ┣obs_init_module(decklink-output-ui.so): 0 ms
+21:43:16.555:      ┃ ┣obs_init_module(decklink.so): 0.085 ms
+21:43:16.555:      ┃ ┣obs_init_module(frontend-tools.so): 84.518 ms
+21:43:16.555:      ┃ ┣obs_init_module(image-source.so): 0.013 ms
+21:43:16.555:      ┃ ┣obs_init_module(linux-alsa.so): 0.003 ms
+21:43:16.555:      ┃ ┣obs_init_module(linux-capture.so): 0 ms
+21:43:16.555:      ┃ ┣obs_init_module(linux-jack.so): 0.006 ms
+21:43:16.555:      ┃ ┣obs_init_module(linux-pipewire.so): 16.32 ms
+21:43:16.555:      ┃ ┣obs_init_module(linux-pulseaudio.so): 0.004 ms
+21:43:16.555:      ┃ ┣obs_init_module(linux-v4l2.so): 3.164 ms
+21:43:16.555:      ┃ ┣obs_init_module(obs-ffmpeg.so): 21.901 ms
+21:43:16.555:      ┃ ┣obs_init_module(obs-filters.so): 0.03 ms
+21:43:16.555:      ┃ ┣obs_init_module(obs-libfdk.so): 0.002 ms
+21:43:16.555:      ┃ ┣obs_init_module(obs-nvenc.so): 0.093 ms
+21:43:16.555:      ┃ ┃ ┗nvenc_check: 0.082 ms
+21:43:16.555:      ┃ ┣obs_init_module(obs-outputs.so): 0.004 ms
+21:43:16.555:      ┃ ┣obs_init_module(obs-qsv11.so): 9.404 ms
+21:43:16.555:      ┃ ┣obs_init_module(obs-transitions.so): 0.007 ms
+21:43:16.555:      ┃ ┣obs_init_module(obs-vst.so): 0.004 ms
+21:43:16.555:      ┃ ┣obs_init_module(obs-webrtc.so): 0.004 ms
+21:43:16.555:      ┃ ┣obs_init_module(obs-x264.so): 0.002 ms
+21:43:16.555:      ┃ ┣obs_init_module(rtmp-services.so): 0.138 ms
+21:43:16.555:      ┃ ┗obs_init_module(text-freetype2.so): 0.056 ms
+21:43:16.555:      ┣OBSBasic::InitService: 2.113 ms
+21:43:16.555:      ┣OBSBasic::ResetOutputs: 0.21 ms
+21:43:16.555:      ┣OBSBasic::CreateHotkeys: 0.023 ms
+21:43:16.555:      ┣OBSBasic::InitPrimitives: 0.174 ms
+21:43:16.556:      ┗OBSBasic::Load: 56.169 ms
+21:43:16.556: obs_hotkey_thread(25 ms): min=0 ms, median=0.001 ms, max=0.066 ms, 99th percentile=0.004 ms, 100% below 25 ms
+21:43:16.556: audio_thread(Audio): min=0.006 ms, median=0.125 ms, max=3.999 ms, 99th percentile=0.877 ms
+21:43:16.556:  ┗receive_audio: min=0.003 ms, median=0.135 ms, max=3.779 ms, 99th percentile=1.221 ms, 0.127717 calls per parent call
+21:43:16.556:    ┣buffer_audio: min=0.001 ms, median=0.003 ms, max=0.118 ms, 99th percentile=0.026 ms
+21:43:16.556:    ┗do_encode: min=0.024 ms, median=0.13 ms, max=3.745 ms, 99th percentile=1.216 ms
+21:43:16.556:      ┣encode(test_aac): min=0.024 ms, median=0.125 ms, max=3.741 ms, 99th percentile=1.11 ms
+21:43:16.556:      ┗send_packet: min=0.001 ms, median=0.004 ms, max=2.63 ms, 99th percentile=0.045 ms
+21:43:16.556: obs_graphics_thread(33.3333 ms): min=0.11 ms, median=0.747 ms, max=6.386 ms, 99th percentile=2.057 ms, 100% below 33.333 ms
+21:43:16.556:  ┣tick_sources: min=0 ms, median=0.015 ms, max=0.061 ms, 99th percentile=0.042 ms
+21:43:16.556:  ┣output_frame: min=0.072 ms, median=0.255 ms, max=1.28 ms, 99th percentile=0.456 ms
+21:43:16.556:  ┃ ┗gs_context(video->graphics): min=0.072 ms, median=0.254 ms, max=1.279 ms, 99th percentile=0.455 ms
+21:43:16.556:  ┃   ┣render_video: min=0.017 ms, median=0.055 ms, max=0.18 ms, 99th percentile=0.121 ms
+21:43:16.556:  ┃   ┃ ┗render_main_texture: min=0.014 ms, median=0.047 ms, max=0.169 ms, 99th percentile=0.108 ms
+21:43:16.556:  ┃   ┗gs_flush: min=0.044 ms, median=0.165 ms, max=1.216 ms, 99th percentile=0.363 ms
+21:43:16.556:  ┗render_displays: min=0.004 ms, median=0.411 ms, max=6.053 ms, 99th percentile=1.887 ms
+21:43:16.556: obs_graphics_thread(16.6667 ms): min=0.414 ms, median=1.879 ms, max=8.982 ms, 99th percentile=8.072 ms, 100% below 16.667 ms
+21:43:16.556:  ┣tick_sources: min=0.007 ms, median=0.021 ms, max=0.227 ms, 99th percentile=0.063 ms
+21:43:16.556:  ┣output_frame: min=0.253 ms, median=1.234 ms, max=5.837 ms, 99th percentile=5 ms
+21:43:16.556:  ┃ ┣gs_context(video->graphics): min=0.237 ms, median=0.824 ms, max=5.007 ms, 99th percentile=3.802 ms
+21:43:16.556:  ┃ ┃ ┣render_video: min=0.104 ms, median=0.326 ms, max=3.586 ms, 99th percentile=2.602 ms
+21:43:16.556:  ┃ ┃ ┃ ┣render_main_texture: min=0.045 ms, median=0.129 ms, max=2.287 ms, 99th percentile=1.444 ms
+21:43:16.556:  ┃ ┃ ┃ ┣render_output_texture: min=0.021 ms, median=0.055 ms, max=2.393 ms, 99th percentile=0.769 ms
+21:43:16.556:  ┃ ┃ ┃ ┣render_convert_texture: min=0.019 ms, median=0.049 ms, max=2.475 ms, 99th percentile=0.438 ms
+21:43:16.556:  ┃ ┃ ┃ ┗stage_output_texture: min=0.015 ms, median=0.037 ms, max=2.209 ms, 99th percentile=0.501 ms
+21:43:16.556:  ┃ ┃ ┣gs_flush: min=0.039 ms, median=0.14 ms, max=4.594 ms, 99th percentile=2.913 ms
+21:43:16.556:  ┃ ┃ ┗download_frame: min=0 ms, median=0.176 ms, max=2.738 ms, 99th percentile=1.985 ms
+21:43:16.556:  ┃ ┗output_video_data: min=0 ms, median=0.266 ms, max=3.748 ms, 99th percentile=3.272 ms
+21:43:16.556:  ┗render_displays: min=0.109 ms, median=0.57 ms, max=5.962 ms, 99th percentile=5.342 ms
+21:43:16.556: video_thread(video): min=0 ms, median=23.102 ms, max=104.504 ms, 99th percentile=99.619 ms
+21:43:16.556:  ┗receive_video: min=0.652 ms, median=13.754 ms, max=74.107 ms, 99th percentile=58.17 ms, 1.64835 calls per parent call
+21:43:16.556:    ┗do_encode: min=0.652 ms, median=13.754 ms, max=74.106 ms, 99th percentile=58.169 ms
+21:43:16.556:      ┣encode(test_x264): min=0.649 ms, median=13.723 ms, max=74.07 ms, 99th percentile=58.133 ms
+21:43:16.556:      ┗send_packet: min=0.001 ms, median=0.023 ms, max=3.571 ms, 99th percentile=0.58 ms, 0.903333 calls per parent call
+21:43:16.556: obs_graphics_thread(33.3333 ms): min=0.38 ms, median=0.626 ms, max=4.358 ms, 99th percentile=3.977 ms, 100% below 33.333 ms
+21:43:16.556:  ┣tick_sources: min=0.006 ms, median=0.006 ms, max=0.019 ms, 99th percentile=0.018 ms
+21:43:16.556:  ┣output_frame: min=0.163 ms, median=0.416 ms, max=3.343 ms, 99th percentile=2.007 ms
+21:43:16.556:  ┃ ┣gs_context(video->graphics): min=0.163 ms, median=0.247 ms, max=1.548 ms, 99th percentile=1.039 ms
+21:43:16.556:  ┃ ┃ ┣render_video: min=0.046 ms, median=0.111 ms, max=0.442 ms, 99th percentile=0.392 ms
+21:43:16.556:  ┃ ┃ ┃ ┣render_main_texture: min=0.04 ms, median=0.044 ms, max=0.236 ms, 99th percentile=0.106 ms
+21:43:16.556:  ┃ ┃ ┃ ┣render_output_texture: min=0.019 ms, median=0.021 ms, max=0.083 ms, 99th percentile=0.077 ms
+21:43:16.556:  ┃ ┃ ┃ ┣render_convert_texture: min=0.019 ms, median=0.021 ms, max=0.124 ms, 99th percentile=0.073 ms
+21:43:16.556:  ┃ ┃ ┃ ┗stage_output_texture: min=0.013 ms, median=0.015 ms, max=0.109 ms, 99th percentile=0.071 ms
+21:43:16.556:  ┃ ┃ ┣gs_flush: min=0.051 ms, median=0.058 ms, max=0.639 ms, 99th percentile=0.324 ms
+21:43:16.556:  ┃ ┃ ┗download_frame: min=0 ms, median=0.071 ms, max=0.862 ms, 99th percentile=0.441 ms
+21:43:16.556:  ┃ ┗output_video_data: min=0.14 ms, median=0.165 ms, max=2.952 ms, 99th percentile=0.457 ms
+21:43:16.556:  ┗render_displays: min=0.102 ms, median=0.178 ms, max=2.309 ms, 99th percentile=0.892 ms
+21:43:16.556: video_thread(video): min=1.88 ms, median=2.744 ms, max=19.818 ms, 99th percentile=12.823 ms
+21:43:16.556:  ┗receive_video: min=1.878 ms, median=2.741 ms, max=19.814 ms, 99th percentile=12.821 ms
+21:43:16.556:    ┗do_encode: min=1.876 ms, median=2.741 ms, max=19.812 ms, 99th percentile=12.819 ms
+21:43:16.556:      ┣encode(test_x264): min=1.773 ms, median=2.604 ms, max=19.81 ms, 99th percentile=12.818 ms
+21:43:16.556:      ┗send_packet: min=0.025 ms, median=0.07 ms, max=3.252 ms, 99th percentile=1.841 ms, 0.872483 calls per parent call
+21:43:16.556: obs_graphics_thread(16.6667 ms): min=0.596 ms, median=2.081 ms, max=3.167 ms, 99th percentile=2.867 ms, 100% below 16.667 ms
+21:43:16.556:  ┣tick_sources: min=0.007 ms, median=0.016 ms, max=0.091 ms, 99th percentile=0.058 ms
+21:43:16.556:  ┣output_frame: min=0.35 ms, median=1.109 ms, max=2.01 ms, 99th percentile=1.757 ms
+21:43:16.556:  ┃ ┣gs_context(video->graphics): min=0.254 ms, median=0.818 ms, max=1.533 ms, 99th percentile=1.243 ms
+21:43:16.556:  ┃ ┃ ┣render_video: min=0.091 ms, median=0.349 ms, max=1.114 ms, 99th percentile=0.726 ms
+21:43:16.556:  ┃ ┃ ┃ ┣render_main_texture: min=0.045 ms, median=0.147 ms, max=0.588 ms, 99th percentile=0.44 ms
+21:43:16.556:  ┃ ┃ ┃ ┣render_output_texture: min=0.02 ms, median=0.047 ms, max=0.575 ms, 99th percentile=0.218 ms
+21:43:16.556:  ┃ ┃ ┃ ┣render_convert_texture: min=0.02 ms, median=0.039 ms, max=0.232 ms, 99th percentile=0.189 ms
+21:43:16.556:  ┃ ┃ ┃ ┗stage_output_texture: min=0.013 ms, median=0.026 ms, max=0.195 ms, 99th percentile=0.178 ms
+21:43:16.556:  ┃ ┃ ┣gs_flush: min=0.054 ms, median=0.124 ms, max=0.809 ms, 99th percentile=0.436 ms
+21:43:16.556:  ┃ ┃ ┗download_frame: min=0 ms, median=0.131 ms, max=0.562 ms, 99th percentile=0.545 ms
+21:43:16.556:  ┃ ┗output_video_data: min=0.086 ms, median=0.215 ms, max=0.9 ms, 99th percentile=0.735 ms
+21:43:16.556:  ┗render_displays: min=0.118 ms, median=0.881 ms, max=1.74 ms, 99th percentile=1.398 ms
+21:43:16.556: video_thread(video): min=0.456 ms, median=1.498 ms, max=5.526 ms, 99th percentile=5.057 ms
+21:43:16.556:  ┗receive_video: min=0.451 ms, median=1.494 ms, max=5.52 ms, 99th percentile=5.052 ms
+21:43:16.556:    ┗do_encode: min=0.448 ms, median=1.49 ms, max=5.517 ms, 99th percentile=5.046 ms
+21:43:16.556:      ┣encode(test_x264): min=0.421 ms, median=1.464 ms, max=5.441 ms, 99th percentile=5.039 ms
+21:43:16.556:      ┗send_packet: min=0.006 ms, median=0.018 ms, max=0.438 ms, 99th percentile=0.244 ms, 0.936455 calls per parent call
+21:43:16.556: obs_graphics_thread(33.3333 ms): min=0.377 ms, median=0.486 ms, max=1.551 ms, 99th percentile=1.481 ms, 100% below 33.333 ms
+21:43:16.556:  ┣tick_sources: min=0.005 ms, median=0.007 ms, max=0.026 ms, 99th percentile=0.023 ms
+21:43:16.556:  ┣output_frame: min=0.234 ms, median=0.316 ms, max=1.021 ms, 99th percentile=0.884 ms
+21:43:16.556:  ┃ ┣gs_context(video->graphics): min=0.224 ms, median=0.247 ms, max=0.736 ms, 99th percentile=0.718 ms
+21:43:16.556:  ┃ ┃ ┣render_video: min=0.092 ms, median=0.112 ms, max=0.326 ms, 99th percentile=0.298 ms
+21:43:16.556:  ┃ ┃ ┃ ┣render_main_texture: min=0.039 ms, median=0.047 ms, max=0.12 ms, 99th percentile=0.119 ms
+21:43:16.556:  ┃ ┃ ┃ ┣render_output_texture: min=0.018 ms, median=0.021 ms, max=0.06 ms, 99th percentile=0.06 ms
+21:43:16.556:  ┃ ┃ ┃ ┣render_convert_texture: min=0.018 ms, median=0.021 ms, max=0.071 ms, 99th percentile=0.07 ms
+21:43:16.556:  ┃ ┃ ┃ ┗stage_output_texture: min=0.013 ms, median=0.015 ms, max=0.07 ms, 99th percentile=0.054 ms
+21:43:16.556:  ┃ ┃ ┣gs_flush: min=0.049 ms, median=0.057 ms, max=0.195 ms, 99th percentile=0.194 ms
+21:43:16.556:  ┃ ┃ ┗download_frame: min=0 ms, median=0.072 ms, max=0.286 ms, 99th percentile=0.26 ms
+21:43:16.556:  ┃ ┗output_video_data: min=0.047 ms, median=0.063 ms, max=0.283 ms, 99th percentile=0.187 ms
+21:43:16.556:  ┗render_displays: min=0.109 ms, median=0.136 ms, max=0.751 ms, 99th percentile=0.687 ms
+21:43:16.556: video_thread(video): min=0.255 ms, median=0.697 ms, max=4.394 ms, 99th percentile=4.044 ms
+21:43:16.556:  ┗receive_video: min=0.254 ms, median=0.695 ms, max=4.388 ms, 99th percentile=4.041 ms
+21:43:16.556:    ┗do_encode: min=0.253 ms, median=0.693 ms, max=4.384 ms, 99th percentile=4.038 ms
+21:43:16.556:      ┣encode(test_x264): min=0.245 ms, median=0.637 ms, max=4.381 ms, 99th percentile=3.943 ms
+21:43:16.556:      ┗send_packet: min=0.006 ms, median=0.017 ms, max=0.096 ms, 99th percentile=0.093 ms, 0.872483 calls per parent call
+21:43:16.556: obs_graphics_thread(33.3333 ms): min=0.325 ms, median=0.836 ms, max=4.142 ms, 99th percentile=1.884 ms, 100% below 33.333 ms
+21:43:16.556:  ┣tick_sources: min=0.007 ms, median=0.016 ms, max=0.272 ms, 99th percentile=0.073 ms
+21:43:16.556:  ┣output_frame: min=0.113 ms, median=0.277 ms, max=1.342 ms, 99th percentile=0.858 ms
+21:43:16.556:  ┃ ┗gs_context(video->graphics): min=0.112 ms, median=0.276 ms, max=1.34 ms, 99th percentile=0.855 ms
+21:43:16.556:  ┃   ┣render_video: min=0.025 ms, median=0.061 ms, max=0.522 ms, 99th percentile=0.205 ms
+21:43:16.556:  ┃   ┃ ┗render_main_texture: min=0.018 ms, median=0.052 ms, max=0.497 ms, 99th percentile=0.176 ms
+21:43:16.556:  ┃   ┗gs_flush: min=0.066 ms, median=0.183 ms, max=1.189 ms, 99th percentile=0.582 ms
+21:43:16.556:  ┗render_displays: min=0.141 ms, median=0.44 ms, max=3.174 ms, 99th percentile=1.297 ms
+21:43:16.556: obs_graphics_thread(33.3333 ms): min=0.133 ms, median=0.741 ms, max=7.415 ms, 99th percentile=1.715 ms, 100% below 33.333 ms
+21:43:16.556:  ┣tick_sources: min=0.002 ms, median=0.016 ms, max=0.092 ms, 99th percentile=0.041 ms
+21:43:16.556:  ┣output_frame: min=0.074 ms, median=0.255 ms, max=1.211 ms, 99th percentile=0.709 ms
+21:43:16.556:  ┃ ┗gs_context(video->graphics): min=0.074 ms, median=0.254 ms, max=1.21 ms, 99th percentile=0.707 ms
+21:43:16.556:  ┃   ┣render_video: min=0.02 ms, median=0.054 ms, max=0.256 ms, 99th percentile=0.156 ms
+21:43:16.556:  ┃   ┃ ┗render_main_texture: min=0.017 ms, median=0.047 ms, max=0.232 ms, 99th percentile=0.136 ms
+21:43:16.556:  ┃   ┗gs_flush: min=0.047 ms, median=0.171 ms, max=0.955 ms, 99th percentile=0.473 ms
+21:43:16.556:  ┗render_displays: min=0.005 ms, median=0.404 ms, max=6.661 ms, 99th percentile=1.177 ms
+21:43:16.556: OBSBasic::ResetVideo: 36.864 ms
+21:43:16.556: OBSBasic::ResetOutputs: 0.444 ms
+21:43:16.556: OBSBasicSettings::LoadThemeList: min=0.004 ms, median=0 ms, max=0.037 ms, 99th percentile=0.037 ms
+21:43:16.556: =================================================
+21:43:16.556: == Profiler Time Between Calls ==================
+21:43:16.556: obs_hotkey_thread(25 ms): min=25.029 ms, median=25.141 ms, max=28.481 ms, 98.3703% within ±2% of 25 ms (0% lower, 1.62975% higher)
+21:43:16.556: obs_graphics_thread(33.3333 ms): min=31.82 ms, median=33.334 ms, max=34.86 ms, 99.6255% within ±2% of 33.333 ms (0.187266% lower, 0.187266% higher)
+21:43:16.556: obs_graphics_thread(16.6667 ms): min=11.38 ms, median=16.686 ms, max=21.622 ms, 40.3846% within ±2% of 16.667 ms (27.8846% lower, 31.7308% higher)
+21:43:16.556: obs_graphics_thread(33.3333 ms): min=32.631 ms, median=33.333 ms, max=33.785 ms, 99.3377% within ±2% of 33.333 ms (0.662252% lower, 0% higher)
+21:43:16.556: obs_graphics_thread(16.6667 ms): min=15.897 ms, median=16.657 ms, max=17.403 ms, 99.0033% within ±2% of 16.667 ms (0.332226% lower, 0.664452% higher)
+21:43:16.556: obs_graphics_thread(33.3333 ms): min=32.752 ms, median=33.335 ms, max=33.921 ms, 100% within ±2% of 33.333 ms (0% lower, 0% higher)
+21:43:16.556: obs_graphics_thread(33.3333 ms): min=32.894 ms, median=33.335 ms, max=33.737 ms, 100% within ±2% of 33.333 ms (0% lower, 0% higher)
+21:43:16.556: obs_graphics_thread(33.3333 ms): min=31.596 ms, median=33.335 ms, max=35.081 ms, 99.8477% within ±2% of 33.333 ms (0.0761615% lower, 0.0761615% higher)
+21:43:16.556: =================================================
+21:43:16.582: Number of memory leaks: 0

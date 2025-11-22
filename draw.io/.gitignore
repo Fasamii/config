@@ -1,0 +1,19 @@
+/blob_storeage
+/Cache
+/Code\ Cache
+/Crashpad
+/DawnGraphiteCache
+/DawnWebGPUCache
+/Dictionaries
+/GPUCache
+/IndexDB
+/Local\ Storage
+/Session\ Storage
+/Shared\ Dictionary
+/WebStorage
+
+/DIPS
+/Network\ Persistent\ State
+/SharedStorage
+/Trust\ Tokens
+/Trust\ Tokens-journal
