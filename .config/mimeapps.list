@@ -1,0 +1,4 @@
+
+[Default Applications]
+x-schem-handler/http=org.qutebrowser.qutebrowser.desktop
+x-schem-handler/https=org.qutebrowser.qutebrowser.desktop
