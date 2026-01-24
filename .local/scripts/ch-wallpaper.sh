@@ -3,8 +3,7 @@
 set -e
 
 notify() {
-	hyprctl notify 3 2000 "rgb(ff0020)" "fontsize:14 ch-wallpaper failed" >> /dev/null
-	exit 1
+	notify-send "Failed to change wallpaper";
 }
 
 WALLPAPER_PATH="$HOME/.local/wallpapers"
@@ -38,4 +37,7 @@ echo "$WALLPAPER_NAME" > "$LAST_WALLPAPER_FILE"
 swww img "$WALLPAPER_PATH/$WALLPAPER_NAME" \
 	--transition-type=simple \
 	--transition-step=25 \
-	--transition-fps=30 || notify
+	--transition-fps=30 || {
+		notify;
+		exit 1;
+	}
