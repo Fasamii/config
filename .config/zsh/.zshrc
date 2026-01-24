@@ -208,7 +208,7 @@ prompt_profile_full() {
 }
 
 prompt_profile_min() {
-	PROMPT="%B%F{$PROMPT_COLOR}<%F{blue}%n@%m%F{$PROMPT_COLOR}><%F{blue}%~%F{$PROMPT_COLOR}>%F{blue} "
+	PROMPT="%B%F{$PROMPT_COLOR}<%F{blue}%n%F{$PROMPT_COLOR}@%F{blue}%m%F{$PROMPT_COLOR}><%F{blue}%~%F{$PROMPT_COLOR}>%F{blue} "
 	RPROMPT=''
 	PS2='>'
 }
