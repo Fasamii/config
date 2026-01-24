@@ -7,7 +7,7 @@ notify() {
 	exit 1
 }
 
-WALLPAPER_PATH="$HOME/.config/util/wallpapers"
+WALLPAPER_PATH="$HOME/.local/wallpapers"
 CACHE_DIR="${XDG_CACHE_HOME:-$HOME/.cache}"
 LAST_WALLPAPER_FILE="$CACHE_DIR/last_wallpaper.txt"
 
