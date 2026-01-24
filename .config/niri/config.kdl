@@ -8,7 +8,7 @@
 // https://yalter.github.io/niri/Configuration:-Input
 input {
 	tablet {
-		map-to_outpput "DP-2"
+		map-to-outpput "DP-2"
 	}
 
     keyboard {
