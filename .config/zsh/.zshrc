@@ -195,9 +195,49 @@ cargo_info() {
 	echo "%{%f%}";
 }
 
-PROMPT='%B$(root_marker)%F{$PROMPT_COLOR}❰$(command_status)$(shell_level)$(ssh_info)$(git_info)$(cargo_info)%F{$PROMPT_COLOR}❱❰%~❱%F{blue} ';
-# RPROMPT='%F{240}%n@%m%f'
-PS2='%B%F{$PROMPT_COLOR}❱%F{blue} '
+prompt_profile_main() {
+	PROMPT='%B$(root_marker)%F{$PROMPT_COLOR}❰$(command_status)$(shell_level)$(ssh_info)$(git_info)$(cargo_info)%F{$PROMPT_COLOR}❱❰%~❱%F{blue} ';
+	RPROMPT=''
+	PS2='%B%F{$PROMPT_COLOR}❱%F{blue} '
+}
+
+prompt_profile_full() {
+	PROMPT='%B$(root_marker)%F{$PROMPT_COLOR}❰%~❱%F{blue} ';
+	RPROMPT='%F{$PROMPT_COLOR}❰$(command_status)$(shell_level)$(ssh_info)$(git_info)$(cargo_info)%F{$PROMPT_COLOR}❱'
+	PS2='%B%F{$PROMPT_COLOR}❱%F{blue} '
+}
+
+prompt_profile_min() {
+	PROMPT="%B%F{$PROMPT_COLOR}<%F{blue}%n@%m%F{$PROMPT_COLOR}><%F{blue}%~%F{$PROMPT_COLOR}>%F{blue} "
+	RPROMPT=''
+	PS2='>'
+}
+
+prompt_apply() {
+	case $PROMPT_PROFILE in
+		main) prompt_profile_main ;;
+		full) prompt_profile_full ;;
+		min) prompt_profile_min ;;
+	esac
+}
+
+typeset -ga PROMPT_PROFILES=("main" "min" "full");
+typeset -gi PROMPT_PROFILE_INDEX=1
+typeset -g PROMPT_PROFILE=${PROMPT_PROFILES[1]}
+prompt_switch() {
+	(( PROMPT_PROFILE_INDEX++ ))
+
+	if (( PROMPT_PROFILE_INDEX > $#PROMPT_PROFILES )); then
+		PROMPT_PROFILE_INDEX=1
+	fi
+
+	PROMPT_PROFILE=${PROMPT_PROFILES[PROMPT_PROFILE_INDEX]}
+
+	prompt_apply
+	zle reset-prompt
+}
+zle -N prompt_switch
+bindkey '^@' prompt_switch;
 
 typeset CMD_TIME CMD_START CMD_END
 
@@ -206,9 +246,7 @@ preexec() {
 }
 
 precmd() {
-	# if (( $CMD_TIME > 10 )); then
-	# 	notify-send "Comand finished in ${CMD_TIME}s";
-	# fi
+	prompt_apply;
 
 	EXIT_CODE=$?
 
