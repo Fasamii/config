@@ -1,0 +1,237 @@
+if (( $EUID != 0 && $SHLVL < 3)); then
+	uwufetch;
+	echo;
+fi
+
+##########
+# CONFIG #
+##########
+
+alias dot='git --git-dir=$HOME/.dotfiles --work-tree=$HOME';
+
+###########
+# HISTORY #
+###########
+
+HISTFILE="$HOME/.config/zsh/history"
+HISTSIZE=1000
+SAVEHIST=1000
+
+setopt HIST_IGNORE_DUPS
+setopt HIST_IGNORE_SPACE
+setopt HIST_VERIFY
+setopt SHARE_HISTORY
+
+
+###########
+# GENERAL #
+###########
+
+unsetopt BEEP
+bindkey -v
+
+zstyle :compinstall filename "$HOME/.config/zsh/.zshrc"
+
+[[ -f "$HOME/.ghcup/env" ]] && source "$HOME/.ghcup/env"
+
+autoload -Uz compinit
+compinit
+
+export MANPAGER='nvim +Man!'
+
+export PATH="$PATH:$HOME/.config/bin"
+
+#######
+# MOD #
+#######
+
+zmodload zsh/datetime;
+
+###########
+# ALIASES #
+###########
+
+alias idk='echo "me too bro me too (T^T)"'
+
+alias ls='eza -aF --icons --color=always --group-directories-first --long --time-style=long-iso'
+alias l=ls
+alias mk=mkdir
+alias rmd='rm -d'
+alias rmr='rm -r'
+alias rmfr='rm -rf'
+alias c=clear
+alias h=hyprland
+alias v=nvim
+alias vim=nvim
+alias rd=radare2
+alias e=exit
+alias q=exit
+
+alias gs='git status -s'
+alias ga='git add'
+alias gd='git diff'
+alias gcm='git commit -m'
+alias gps='git push'
+
+alias a='ip -c a'
+alias myip='curl -s ifconfig.me;echo;'
+
+alias co=cargo
+alias snote='hyprctl notify -1 999999999 "rgb(ffffff)"'
+
+
+#############
+# FUNCTIONS #
+#############
+
+utime() {
+	trap 'echo; return' INT;
+	while true; do
+		printf '\r%s' "$(date)";
+		sleep 1;
+	done
+}
+
+cd() {
+	if (( $# == 0 )); then
+		builtin cd
+	elif [[ $1 == "..." ]]; then
+		builtin cd ../..
+	elif [[ $1 == "...." ]]; then
+		builtin cd ../../..
+	else
+		builtin cd "$@"
+	fi
+}
+
+
+############
+# VIM MODE #
+############
+
+function zle-line-init zle-keymap-select {
+	case ${KEYMAP} in
+		(vicmd)      PROMPT_VIMODE="%F{yellow}❮N❯%f " ;;
+		(main|viins) PROMPT_VIMODE="" ;;
+		(*)          PROMPT_VIMODE="" ;;
+	esac
+	zle reset-prompt
+}
+zle -N zle-line-init
+zle -N zle-keymap-select
+
+##########
+# PROMPT #
+##########
+
+setopt PROMPT_SUBST
+setopt EXTENDED_GLOB
+
+TIME_COLOR="cyan"
+SHLVL_COLOR="blue"
+SSH_COLOR="#00FF00"
+GIT_COLOR="#FD0D08"
+CARGO_COLOR="#ED4316"
+
+SEPARATOR="]["
+PROMPT_COLOR="magenta"
+
+root_marker() {
+  (( $EUID == 0 )) && echo "%{%F{red}%}❰ROOT❱%{%f%} "
+}
+
+command_status() {
+	if (( EXIT_CODE == 0 )); then
+		echo -n "%{%F{green}%}OK%{%f%}"
+	elif (( EXIT_CODE > 128 )); then
+		echo -n "%{%F{red}%}SIG-$(( EXIT_CODE - 128 ))%{%f%}"
+	else
+		echo -n "%{%F{red}%}$EXIT_CODE%{%f%}"
+	fi
+	(( CMD_TIME > 0.5 )) && \
+		echo "%{%F{$PROMPT_COLOR}%}~%{%F{$TIME_COLOR}%}${CMD_TIME}s%{%f%}";
+}
+
+shell_level() {
+	(( SHLVL > 1 )) && \
+		echo "%{%F{$PROMPT_COLOR}%}${SEPARATOR}%{%F{$SHLVL_COLOR}%}$SHLVL%{%f%}";
+}
+
+
+ssh_info() {
+	[[ -n $SSH_CONNECTION ]] && \
+		echo "%{%F{$PROMPT_COLOR}%}${SEPARATOR}%{%F{$SSH_COLOR}%}SSH%{%f%}";
+}
+
+git_info() {
+	local ref dirty;
+
+	ref=$(git symbolic-ref --quiet --short HEAD 2>/dev/null \
+	   || git rev-parse --abbrev-ref HEAD 2>/dev/null \
+	   || git describe --tags --dirty --always 2>/dev/null) || return;
+
+	[[ -n $(git status --porcelain 2>/dev/null) ]] && dirty="*"
+
+	echo "%{%F{$PROMPT_COLOR}%}${SEPARATOR}%{%F{$GIT_COLOR}%}$ref$dirty%{%f%}";
+}
+
+cargo_info() {
+	local cargo_toml;
+	cargo_toml=$(cargo locate-project --workspace --message-format=plain 2>/dev/null) || return;
+	
+	local name version key value;
+	while IFS='=' read -r key value; do
+		key="${${key##[[:space:]]#}%%[[:space:]]#}";
+		value="${${${value//\"/}##[[:space:]]#}%%[[:space:]]#}";
+		case $key in
+			name)    name=$value ;;
+			version) version=$value ;;
+		esac
+	done < "$cargo_toml";
+	
+	[[ -n $name ]] || return;
+	echo -n "%{%F{$PROMPT_COLOR}%}${SEPARATOR}%{%F{$CARGO_COLOR}%}$name";
+	[[ -n $version ]] && echo -n "-$version";
+	echo "%{%f%}";
+}
+
+PROMPT='%B$(root_marker)%F{$PROMPT_COLOR}❰$(command_status)$(shell_level)$(ssh_info)$(git_info)$(cargo_info)%F{$PROMPT_COLOR}❱❰%~❱%F{blue} ';
+# RPROMPT='%F{240}%n@%m%f'
+PS2='%B%F{$PROMPT_COLOR}❱%F{blue} '
+
+typeset CMD_TIME CMD_START CMD_END
+
+preexec() {
+	CMD_START=$EPOCHREALTIME
+}
+
+precmd() {
+	# if (( $CMD_TIME > 10 )); then
+	# 	notify-send "Comand finished in ${CMD_TIME}s";
+	# fi
+
+	EXIT_CODE=$?
+
+	CMD_END=${EPOCHREALTIME:-$(date +%s.%N)}
+	if [[ -z $CMD_START ]]; then
+		CMD_START=$CMD_END
+		CMD_TIME=0
+	else
+		CMD_TIME=$(awk -v start="$CMD_START" -v end="$CMD_END" 'BEGIN{printf "%.3f", end-start}')
+		CMD_START=$CMD_END
+	fi
+}
+
+zle-line-finish() {
+	echo -ne '\e[0m'  # reset all formatting
+}
+zle -N zle-line-finish
+
+##########
+# ERRORS #
+##########
+
+command_not_found_handler() {
+	echo "\e[1;31m❰COMMAND NOT FOUND: \e[38;5;4m$1\e[1;31m❱\e[0m"
+	return 127
+}

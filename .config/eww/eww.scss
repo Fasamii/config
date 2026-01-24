@@ -1,0 +1,31 @@
+.main-bar {
+  color: #fff;
+  background-color: #000;
+  padding: 6px 0px;
+  font-size: 12px;
+  font-weight: 200;
+  font-family: "Monocraft" ,"FiraCode", monospace;
+}
+
+.song-container {
+  font-size: 10px;
+  font-weight: 100;
+}
+
+.vol-bar>trough {
+  border-radius: 0;
+  border: none;
+  padding: 0;
+  margin: 0;
+
+  background-color: #383838;
+}
+
+.vol-bar>trough>progress {
+  border-radius: 0;
+  border: none;
+  padding: 0;
+  margin: 0;
+
+  background-color: #fff;
+}

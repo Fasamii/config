@@ -1,0 +1,20 @@
+/dconf
+/EgoSoft
+/go
+/obsidian
+/nwg-look
+/pulse
+/spotify
+/unity3d
+/yay
+/obs-studio
+/zsh/history
+/spotify
+/systemd
+
+kritadisplayrc
+mimeapps.list
+QtProject.conf
+
+# TODO: Remove later
+/ray
