@@ -250,6 +250,7 @@ binds {
 
     // The quit action will show a confirmation dialog to avoid accidental exits.
     Ctrl+Alt+Delete { quit; }
+    Ctrl+Alt+Shift+Delete { spawn-sh "~/.local/scripts/shutdown.sh"; }
 
     // Powers off the monitors. To turn them back on, do any input like
     // moving the mouse or pressing any other key.
