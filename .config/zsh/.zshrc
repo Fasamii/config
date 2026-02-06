@@ -28,7 +28,6 @@ setopt SHARE_HISTORY
 ###########
 
 unsetopt BEEP
-bindkey -v
 
 zstyle :compinstall filename "$HOME/.config/zsh/.zshrc"
 
@@ -92,33 +91,36 @@ utime() {
 	done
 }
 
-cd() {
-	if (( $# == 0 )); then
-		builtin cd
-	elif [[ $1 == "..." ]]; then
-		builtin cd ../..
-	elif [[ $1 == "...." ]]; then
-		builtin cd ../../..
-	else
-		builtin cd "$@"
-	fi
-}
-
-
 ############
 # VIM MODE #
 ############
 
-function zle-line-init zle-keymap-select {
-	case ${KEYMAP} in
-		(vicmd)      PROMPT_VIMODE="%F{yellow}❮N❯%f " ;;
-		(main|viins) PROMPT_VIMODE="" ;;
-		(*)          PROMPT_VIMODE="" ;;
-	esac
+bindkey -v
+KEYTIMEOUT=1
+stty -ixon
+
+zle-line-init() {
+	zle -K viins
+	PROMPT_VIMODE=""
 	zle reset-prompt
 }
 zle -N zle-line-init
+
+zle-keymap-select() {
+	case $KEYMAP in
+		vicmd) PROMPT_VIMODE="%F{yellow}❮N❯%f " ;;
+		viins|main) PROMPT_VIMODE="" ;;
+	esac
+	zle reset-prompt
+}
 zle -N zle-keymap-select
+
+bindkey '^?' backward-delete-char
+bindkey '^H' backward-delete-char
+bindkey '^[[3~' delete-char
+
+bindkey -r '^[x'
+bindkey -r '^X'
 
 ##########
 # PROMPT #
@@ -261,7 +263,8 @@ precmd() {
 }
 
 zle-line-finish() {
-	echo -ne '\e[0m'  # reset all formatting
+	zle -K viins
+	echo -ne '\e[5 q\e[0m'
 }
 zle -N zle-line-finish
 
