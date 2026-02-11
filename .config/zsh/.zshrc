@@ -83,7 +83,7 @@ alias snote='hyprctl notify -1 999999999 "rgb(ffffff)"'
 # FUNCTIONS #
 #############
 
-utime() {
+udate() {
 	trap 'echo; return' INT;
 	while true; do
 		printf '\r%s' "$(date)";
@@ -244,6 +244,7 @@ bindkey '^@' prompt_switch;
 typeset CMD_TIME CMD_START CMD_END
 
 preexec() {
+	echo -ne '\e[0m'
 	CMD_START=$EPOCHREALTIME
 }
 
@@ -264,7 +265,6 @@ precmd() {
 
 zle-line-finish() {
 	zle -K viins
-	echo -ne '\e[5 q\e[0m'
 }
 zle -N zle-line-finish
 

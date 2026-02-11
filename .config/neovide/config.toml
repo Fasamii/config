@@ -1,0 +1,9 @@
+vsync = false
+
+frame = "buttonless"
+no-multigrid = false
+title-hidden = true
+tabs = false
+
+[box-drawing]
+mode = "font-glyph"
