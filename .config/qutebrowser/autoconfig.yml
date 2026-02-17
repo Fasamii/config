@@ -9,8 +9,10 @@ settings:
   content.javascript.clipboard:
     https://chatgpt.com: access-paste
     https://claude.ai: access-paste
+    https://colordesigner.io: access-paste
     https://github.com: access-paste
     https://github.dev: access-paste
+    https://next.ossinsight.io: access-paste
     https://rustup.rs: access-paste
     https://www.mermaidchart.com: access-paste
     https://www.perplexity.ai: access-paste
